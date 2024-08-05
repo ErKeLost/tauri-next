@@ -1,6 +1,5 @@
 "use client";
 import { cn } from "@/lib/utils";
-import Link, { LinkProps } from "next/link";
 import React, { useState, createContext, useContext } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconMenu2, IconX } from "@tabler/icons-react";
@@ -162,7 +161,7 @@ export const SidebarLink = ({
 }: {
   link: Links;
   className?: string;
-  props?: LinkProps;
+  props?: any;
 }) => {
   const { open, animate } = useSidebar();
   return (
